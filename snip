@@ -1,0 +1,34 @@
+#!/usr/bin/env python
+"""snip
+
+Usage:
+  snip <snippet> -c <context>
+
+Examples:
+  snip helloworld -c "name=World;"
+
+
+Options:
+  -c --context context for the snippet
+"""
+
+from snippyt import *
+from docopt import docopt
+
+
+if __name__ == "__main__":
+    mgr = Snippyt('./templates')
+    options = docopt(__doc__)
+    if options['--context']:
+        path = options['<snippet>']
+        context = options['--context']
+        context = filter(lambda x: x is not None, context.split(';'))
+        context_dict = {}
+        for kv in context:
+            k, v = kv.split('=')
+            context_dict[k] = v
+
+        ret = mgr.run(path=path, context=context_dict)
+        print(ret)
+
+
