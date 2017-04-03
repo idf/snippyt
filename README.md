@@ -3,15 +3,20 @@ A command line snippet management for modern developers.
 
 # Usage
 ```
-snip <snippet_name> --name=value
+Usage:
+  snip <snippet>
+  snip <snippet> -c <context>
+
+Examples:
+  snip helloworld -c "name=World;"
 ```
 
 # Features 
-* basic raw snippet 
-* kwargs in cli 
-* Prompt to ask you for missing entries 
+* Basic plain text snippet 
+* Kwargs in CLI 
+* Show for missing entries 
 
 # Development
 * Python 3.6 (I enjoy Python 2 but I am not living in the past)
-* Jinjia 2
+* Jinjia2
 * docopt
