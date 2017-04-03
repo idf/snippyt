@@ -2,6 +2,7 @@
 """snip
 
 Usage:
+  snip <snippet>
   snip <snippet> -c <context>
 
 Examples:
@@ -19,16 +20,17 @@ from docopt import docopt
 if __name__ == "__main__":
     mgr = Snippyt('./templates')
     options = docopt(__doc__)
+    context_dict = {}
+    path = options['<snippet>']
+
     if options['--context']:
-        path = options['<snippet>']
         context = options['--context']
         context = filter(lambda x: x is not None, context.split(';'))
-        context_dict = {}
         for kv in context:
             k, v = kv.split('=')
             context_dict[k] = v
 
-        ret = mgr.run(path=path, context=context_dict)
-        print(ret)
+    ret = mgr.run(path=path, context=context_dict)
+    print(ret)
 
 
