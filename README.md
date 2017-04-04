@@ -19,6 +19,15 @@ cd snippyt
 sudo python setup.py install
 ```
 
+# Add more snippets
+The default path where snippets go is `~/.snippyt`. For example:
+```
+mkdir ~/.snippyt
+echo "{{ firstname }} {{ lastname }}'s own snippet" > ~/.snippyt/sample
+snip sample -c "firstname=John;lastname=Tenniel"
+# John Tenniel's own snippet
+```
+
 # Features 
 * Basic plain text snippet 
 * kwargs in CLI 
