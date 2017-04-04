@@ -18,7 +18,7 @@ from docopt import docopt
 
 
 if __name__ == "__main__":
-    mgr = Snippyt('./templates')
+    mgr = Snippyt()
     options = docopt(__doc__, version='snippyt 0.0.1')
     context_dict = {}
     path = options['<snippet>']
