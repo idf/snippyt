@@ -14,10 +14,6 @@ class Snippyt(object):
         filename = kwargs.get('path', 'helloworld')
         context = kwargs.get('context', {'name': 'World'})
 
-
-        a = os.path.join(self.dot_path, filename)
-        b = os.path.join(self.templates_path, filename)
-        # TODO debug path
         if os.path.exists(os.path.join(self.dot_path, filename)):
             root_path = self.dot_path
         elif os.path.exists(os.path.join(self.templates_path, filename)):

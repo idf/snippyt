@@ -14,15 +14,18 @@ Examples:
 # Install
 ## Manual
 ```bash
+git clone https://github.com/idf/snippyt.git
+cd snippyt
 sudo python setup.py install
 ```
 
 # Features 
 * Basic plain text snippet 
-* Kwargs in CLI 
+* kwargs in CLI 
 * Show for missing entries 
 
 # Development
 * Python 3.6
-* Jinjia2
-* docopt
+```
+pip install -r requirements.txt
+```
