@@ -17,6 +17,6 @@ Examples:
 * Show for missing entries 
 
 # Development
-* Python 3.6 (I enjoy Python 2 but I am not living in the past)
+* Python 3.6
 * Jinjia2
 * docopt
