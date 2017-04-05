@@ -1,5 +1,5 @@
 # snippyt {:ledger:}
-A command line snippet management for modern developers. 
+A command line snippet management for modern developers.
 
 # Usage
 ```bash
@@ -12,6 +12,10 @@ Examples:
 ```
 
 # Install
+##
+```bash
+pip3 install snippyt
+```
 ## Manual
 ```bash
 git clone https://github.com/idf/snippyt.git
@@ -28,10 +32,10 @@ snip sample -c "firstname=John;lastname=Tenniel"
 # John Tenniel's own snippet
 ```
 
-# Features 
-* Basic plain text snippet 
-* kwargs in CLI 
-* Show for missing entries 
+# Features
+* Basic plain text snippet
+* kwargs in CLI
+* Show for missing entries
 
 # Development
 * Python 3.6
