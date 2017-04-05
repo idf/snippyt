@@ -12,7 +12,8 @@ Examples:
 ```
 
 # Install
-##
+## pip
+
 ```bash
 pip3 install snippyt
 ```
